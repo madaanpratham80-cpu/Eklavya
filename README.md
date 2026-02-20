@@ -3,14 +3,14 @@ EKLAVYA: Decoding the DNA of Learning
 Eklavya is an AI-powered adaptive learning platform designed to eliminate academic burnout by personalizing not just content, but learner behavior. Built as a high-performance Progressive Web App (PWA), it uses local AI processing on AMD Ryzen NPUs to deliver privacy-first, real-time personalization.
 Instead of treating all learners the same, Eklavya identifies cognitive patterns, assigns growth archetypes, and introduces a commitment-based progression system that builds discipline and consistency.
 
-Problem
+Problem?
 Modern EdTech platforms focus on content delivery but ignore how different students learn and stay motivated.
-Common issues include:
+Common issues:
 One-size-fits-all learning paths
 Lack of accountability and consistency
 Motivation driven by reminders instead of commitment
 Burnout caused by passive content consumption
-The result is low retention, poor engagement, and unrealized potential.
+Result: Low retention, poor engagement, and unrealized potential
 
 Solution
 Eklavya introduces a behavioral-first learning system that adapts to the learner’s identity, performance, and commitments.
@@ -22,6 +22,7 @@ Local AI processing for privacy and performance
 This transforms learning from passive consumption into structured self-evolution.
 
 Key Innovations
+
 1. Vow System: Commitment-Based Progression
 Users set personal performance conditions (“Vows”) that control access to advanced content.
 Examples:
@@ -37,7 +38,7 @@ Enhancer: improves through iteration
 Explorer: thrives on discovery
 Strategist: excels with structured pathways
 Creator: learns through building
-Personalization begins at identity level, not content level.
+Personalization begins at the identity level, not content level.
 
 3. Adaptive Level System: Mastery Over Time
 Progression is based on demonstrated mastery, not time spent.
@@ -52,6 +53,14 @@ Privacy-first processing
 Real-time personalization
 Reduced latency and cloud dependency
 Optimized performance on AMD XDNA architectures
+
+5. Themed Learning Modules
+Eklavya enhances engagement by presenting academic content through immersive thematic narratives. Instead of traditional notes, learners explore subjects within contextual worlds that make concepts more relatable and memorable.
+Examples:
+Chemistry: industrial lab narratives inspired by high-stakes production environments
+Industrial Era History: socio-economic exploration through crime-era power structures
+Robotics: futuristic machine ecosystems illustrating automation and AI systems
+This approach improves retention by connecting knowledge with story-driven context and emotional engagement.
 
 How It Works?
 User signs up and completes a diagnostic assessment
@@ -82,14 +91,13 @@ Build discipline through self-imposed commitments
 Stay engaged through identity-driven progression
 Avoid burnout with adaptive pacing
 Achieve mastery instead of passive completion
-
 This approach democratizes access to personalized coaching and makes structured growth available to every learner.
 
-Future Scope:
+Future Scope
 AI model refinement using performance data
 Integration with schools and universities
 Expansion into professional upskilling
 Collaborative challenges and peer progression systems
 
-Project Status:
+Project Status
 Prototype in development. Core systems for learner categorization, vow-based progression, and adaptive UI are implemented at a foundational level.
