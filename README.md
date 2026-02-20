@@ -1,16 +1,18 @@
-# React + Vite
+EKLAVYA: Decoding the DNA of Learning
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Eklavya is the "Netflix for Education"—a high-performance Progressive Web App (PWA) that replaces static EdTech with an adaptive, cinematic learning experience. 
 
-Currently, two official plugins are available:
+Key Innovations
+Silent Calibration: Uses the AMD Ryzen AI NPU to analyze cognitive patterns (focus, speed, latency) locally and privately. 
+Cognitive Superpowers: Categorizes users into archetypes (e.g., The Sprinter, The Architect) to tailor content delivery.
+Cinematic UI: A "Netflix-style" dashboard with horizontal scrolling "Episodes" and real-time bio-feedback via Aura Mode. 
+Hardware Optimized: Native performance on AMD XDNA and Snapdragon architectures for "Always-On" efficiency. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
+Frontend: React.js + Vite (PWA)
+AI Inference: WebNN / ONNX Runtime (NPU Accelerated) 
+Styling: Vanilla CSS3 (Glassmorphism & Neon-Glow)
+State: React Context API + LocalStorage
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Impact
+Eklavya democratizes elite-level personalized coaching, making world-class, adaptive education accessible to every student on any device, anywhere.
