@@ -1,0 +1,31 @@
+:root {
+  /* 2.1 Color Palette */
+  --color-void-black: #050505;
+  --color-amd-red: #ED1C24;
+  --color-carbon-grey: #1A1A1A;
+  --color-hologram-white: #FFFFFF;
+  --color-code-green: #00FF41;
+
+  /* Additional Tints/Shades */
+  --color-glass-bg: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  
+  /* 2.2 Typography */
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Fira Code', 'Courier New', monospace;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+
+  /* Z-Index */
+  --z-background: -1;
+  --z-content: 10;
+  --z-overlay: 100;
+  --z-modal: 1000;
+}

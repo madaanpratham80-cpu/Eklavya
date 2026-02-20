@@ -1,0 +1,194 @@
+/* Calibration Styles */
+.calibration-container {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    font-family: var(--font-mono);
+}
+
+.radar-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radar-circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(237, 28, 36, 0.3);
+    box-shadow: 0 0 10px rgba(237, 28, 36, 0.1);
+}
+
+.c1 {
+    width: 100%;
+    height: 100%;
+    animation: pulse 2s infinite;
+}
+
+.c2 {
+    width: 70%;
+    height: 70%;
+    animation: pulse 2s infinite 0.5s;
+}
+
+.c3 {
+    width: 40%;
+    height: 40%;
+    animation: pulse 2s infinite 1s;
+    background: rgba(237, 28, 36, 0.1);
+}
+
+.radar-sweep {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(transparent 90%, rgba(237, 28, 36, 0.8));
+    animation: sweep 2s linear infinite;
+}
+
+.terminal-logs {
+    margin-top: var(--spacing-xxl);
+    width: 80%;
+    max-width: 600px;
+    height: 150px;
+    overflow: hidden;
+    text-align: left;
+    color: var(--color-code-green);
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Keep latest logs visible */
+}
+
+.log-line {
+    margin-bottom: var(--spacing-xs);
+    opacity: 0;
+    animation: fadeInLog 0.2s forwards;
+}
+
+.success-reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: flashWhite 0.5s ease-out;
+}
+
+.superpower-title {
+    color: var(--color-hologram-white);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+}
+
+.superpower-name {
+    color: var(--color-amd-red);
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 30px rgba(237, 28, 36, 0.6);
+    opacity: 0;
+    animation: zoomInReveal 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s forwards;
+}
+
+.superpower-desc {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: var(--spacing-md);
+    font-size: 1.2rem;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 1.2s forwards;
+}
+
+.fast-forward-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    color: #333;
+    border: 1px solid #333;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.fast-forward-btn:hover {
+    opacity: 1;
+    color: var(--color-amd-red);
+    border-color: var(--color-amd-red);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+}
+
+@keyframes sweep {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInLog {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes flashWhite {
+    0% {
+        background: white;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+@keyframes zoomInReveal {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,146 @@
+/* Dashboard Styles */
+.dashboard-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(5, 5, 5, 0.2), rgba(5, 5, 5, 0.5)),
+        url('/red-circuit-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+
+
+/* Hero Banner */
+.hero-banner {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 var(--spacing-xxl);
+    background: linear-gradient(to bottom, rgba(5, 5, 5, 0) 0%, var(--color-void-black) 100%);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: var(--z-content);
+}
+
+.welcome-text {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-hologram-white);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.curriculum-text {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.resume-btn {
+    padding: 12px 32px;
+    font-size: 1.2rem;
+    background: var(--color-hologram-white);
+    color: var(--color-void-black);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.resume-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Rows */
+.row-container {
+    margin: var(--spacing-xl) 0;
+    padding-left: var(--spacing-xxl);
+}
+
+.row-title {
+    font-size: 1.4rem;
+    color: var(--color-hologram-white);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+}
+
+.row-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    padding-right: var(--spacing-xxl);
+    scrollbar-width: none;
+}
+
+.row-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.thumbnail-card {
+    min-width: 250px;
+    height: 140px;
+    background: #222;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.thumbnail-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Row Specific Styles */
+.row-cs .thumbnail-card {
+    border: 1px solid rgba(0, 255, 65, 0.2);
+    background: #0a0a0a;
+}
+
+.row-cs .thumbnail-card:hover {
+    border-color: var(--color-code-green);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.3);
+}
+
+.row-jee .thumbnail-card {
+    background: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.row-jee .thumbnail-title {
+    font-family: 'Chalkboard SE', sans-serif;
+}
+
+.row-neet .thumbnail-card {
+    background: #0f1820;
+    border: 1px solid rgba(0, 200, 255, 0.2);
+}
+
+.thumbnail-content {
+    text-align: center;
+    pointer-events: none;
+}
+
+.thumbnail-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.thumbnail-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}

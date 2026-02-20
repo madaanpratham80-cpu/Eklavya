@@ -1,0 +1,159 @@
+/* CS Track Styles */
+.cs-track-container {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--color-void-black);
+    padding: var(--spacing-xxl);
+    display: flex;
+    flex-direction: column;
+}
+
+.track-header {
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.track-title {
+    font-size: 2.5rem;
+    color: var(--color-hologram-white);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.track-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-xl);
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.track-card {
+    min-height: 350px;
+    border-radius: 12px;
+    padding: var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s, box-shadow 0.4s;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.track-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    z-index: 10;
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: var(--spacing-xs);
+}
+
+.card-theme {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.module-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.module-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: var(--spacing-sm);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+/* === Theme Specifics === */
+
+/* 1. Web Dev (Uncharted/Evolution) */
+.card-web {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a1a1a 100%);
+    border-color: #d4a373;
+}
+
+.card-web .card-title {
+    color: #faedcd;
+    font-family: 'Times New Roman', serif;
+}
+
+.card-web:hover {
+    box-shadow: 0 0 30px rgba(212, 163, 115, 0.3);
+}
+
+/* 2. Game Dev (Retro Arcade) */
+.card-game {
+    background: #220022;
+    border-color: #ff00ff;
+    font-family: 'Press Start 2P', cursive, monospace;
+    /* Fallback if font not loaded */
+}
+
+.card-game .card-title {
+    color: #00ffff;
+    text-shadow: 2px 2px #ff00ff;
+}
+
+.card-game:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.4);
+}
+
+/* 3. Cyber Sec (The Matrix) */
+.card-sec {
+    background: #001100;
+    border-color: #00ff41;
+}
+
+.card-sec .card-title {
+    color: #00ff41;
+    font-family: var(--font-mono);
+    text-shadow: 0 0 10px #00ff41;
+}
+
+.card-sec .module-item {
+    color: #00ff41;
+    border: 1px dashed #003300;
+}
+
+.card-sec:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.4);
+}
+
+/* 4. Backend (Mission Impossible) */
+.card-backend {
+    background: #1c2331;
+    border-color: #708090;
+}
+
+.card-backend .card-title {
+    color: #e0e0e0;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: -1px;
+}
+
+.card-backend .module-item {
+    border-left: 3px solid #ed1c24;
+    /* Red wire */
+}
+
+.card-backend:hover {
+    box-shadow: 0 0 30px rgba(112, 128, 144, 0.5);
+}
