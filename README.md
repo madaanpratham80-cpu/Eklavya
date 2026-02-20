@@ -1,18 +1,95 @@
 EKLAVYA: Decoding the DNA of Learning
 
-Eklavya is the "Netflix for Education"—a high-performance Progressive Web App (PWA) that replaces static EdTech with an adaptive, cinematic learning experience. 
+Eklavya is an AI-powered adaptive learning platform designed to eliminate academic burnout by personalizing not just content, but learner behavior. Built as a high-performance Progressive Web App (PWA), it uses local AI processing on AMD Ryzen NPUs to deliver privacy-first, real-time personalization.
+Instead of treating all learners the same, Eklavya identifies cognitive patterns, assigns growth archetypes, and introduces a commitment-based progression system that builds discipline and consistency.
+
+Problem
+Modern EdTech platforms focus on content delivery but ignore how different students learn and stay motivated.
+Common issues include:
+One-size-fits-all learning paths
+Lack of accountability and consistency
+Motivation driven by reminders instead of commitment
+Burnout caused by passive content consumption
+The result is low retention, poor engagement, and unrealized potential.
+
+Solution
+Eklavya introduces a behavioral-first learning system that adapts to the learner’s identity, performance, and commitments.
+Core pillars:
+Cognitive archetypes for identity-based personalization
+Commitment-driven progression through the Vow System
+Mastery-based leveling instead of time-based advancement
+Local AI processing for privacy and performance
+This transforms learning from passive consumption into structured self-evolution.
 
 Key Innovations
-Silent Calibration: Uses the AMD Ryzen AI NPU to analyze cognitive patterns (focus, speed, latency) locally and privately. 
-Cognitive Superpowers: Categorizes users into archetypes (e.g., The Sprinter, The Architect) to tailor content delivery.
-Cinematic UI: A "Netflix-style" dashboard with horizontal scrolling "Episodes" and real-time bio-feedback via Aura Mode. 
-Hardware Optimized: Native performance on AMD XDNA and Snapdragon architectures for "Always-On" efficiency. 
+1. Vow System: Commitment-Based Progression
+Users set personal performance conditions (“Vows”) that control access to advanced content.
+Examples:
+Score ≥ 80% to unlock the next level
+Complete 5 challenges to access premium resources
+Maintain a streak to retain progress
+If a vow is unmet, access is restricted by the user’s own commitment, encouraging accountability and discipline.
+
+2. Cognitive Archetypes: Identity-Based Learning
+Eklavya categorizes learners into cognitive archetypes based on diagnostic assessments.
+Examples include:
+Enhancer: improves through iteration
+Explorer: thrives on discovery
+Strategist: excels with structured pathways
+Creator: learns through building
+Personalization begins at identity level, not content level.
+
+3. Adaptive Level System: Mastery Over Time
+Progression is based on demonstrated mastery, not time spent.
+Levels unlock new challenges and resources
+Growth reflects skill development
+Learning becomes a journey, not a checklist
+
+4. Local AI Processing with AMD Ryzen AI
+Eklavya leverages AMD Ryzen AI NPUs for on-device cognitive analysis.
+Benefits:
+Privacy-first processing
+Real-time personalization
+Reduced latency and cloud dependency
+Optimized performance on AMD XDNA architectures
+
+How It Works?
+User signs up and completes a diagnostic assessment
+AI assigns a cognitive archetype
+User sets a Vow (performance condition)
+Progression unlocks based on vow completion
+Themed resources adapt to learner identity and level
+This creates a continuous growth loop driven by commitment and mastery.
+
+Prototype Features
+Progressive Web App built with React + Vite
+Horizontal episode-style learning interface
+Local AI inference using WebNN / ONNX Runtime (NPU accelerated)
+Adaptive dashboard with real-time feedback
+Offline-ready architecture for accessibility
 
 Tech Stack
-Frontend: React.js + Vite (PWA)
-AI Inference: WebNN / ONNX Runtime (NPU Accelerated) 
-Styling: Vanilla CSS3 (Glassmorphism & Neon-Glow)
-State: React Context API + LocalStorage
+Frontend: React.js, Vite, Progressive Web App (PWA)
+AI Inference: WebNN, ONNX Runtime (NPU accelerated)
+Styling: Vanilla CSS3 (Glassmorphism & Neon UI)
+State Management: React Context API, LocalStorage
+Hardware Optimization: AMD XDNA / Ryzen AI
 
-Impact
-Eklavya democratizes elite-level personalized coaching, making world-class, adaptive education accessible to every student on any device, anywhere.
+Why It Matters?
+Eklavya shifts the focus of EdTech from content delivery to behavioral transformation.
+It helps learners:
+Build discipline through self-imposed commitments
+Stay engaged through identity-driven progression
+Avoid burnout with adaptive pacing
+Achieve mastery instead of passive completion
+
+This approach democratizes access to personalized coaching and makes structured growth available to every learner.
+
+Future Scope:
+AI model refinement using performance data
+Integration with schools and universities
+Expansion into professional upskilling
+Collaborative challenges and peer progression systems
+
+Project Status:
+Prototype in development. Core systems for learner categorization, vow-based progression, and adaptive UI are implemented at a foundational level.
